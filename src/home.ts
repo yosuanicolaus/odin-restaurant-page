@@ -16,4 +16,9 @@ const restaurant = document.createElement("section");
 home.appendChild(welcome);
 home.appendChild(restaurant);
 
+// add copyright footer
+const footer = document.createElement("footer");
+footer.textContent = "copyright yosuanicolaus 2022";
+home.appendChild(footer);
+
 export default home;

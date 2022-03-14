@@ -143,9 +143,16 @@ main {
 }
 
 #contact > section {
-  background: url('./map.png');
+  background: url("./map.png");
   background-size: 100%;
   border: 4px solid var(--c1);
   width: 400px;
   height: 260px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.377);
 }
