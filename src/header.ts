@@ -1,16 +1,16 @@
 const header = document.createElement("header");
 
-const divHome = document.createElement("div");
-divHome.textContent = "Home";
+export const tabHome = document.createElement("button");
+tabHome.textContent = "Home";
 
-const divMenu = document.createElement("div");
-divMenu.textContent = "Menu";
+export const tabMenu = document.createElement("button");
+tabMenu.textContent = "Menu";
 
-const divContact = document.createElement("div");
-divContact.textContent = "Contact";
+export const tabContact = document.createElement("button");
+tabContact.textContent = "Contact";
 
-header.appendChild(divHome);
-header.appendChild(divMenu);
-header.appendChild(divContact);
+header.appendChild(tabHome);
+header.appendChild(tabMenu);
+header.appendChild(tabContact);
 
 export default header;

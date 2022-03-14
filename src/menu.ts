@@ -1,21 +1,11 @@
-const menu = (() => {
-  const create = () => {
-    const main = document.createElement("main");
+const menu = document.createElement("main");
 
-    const name = document.createElement("h3");
-    name.textContent = "Pizza";
-    const description = document.createElement("em");
-    description.textContent = "best pizza you will ever eat";
+const name = document.createElement("h3");
+name.textContent = "Pizza";
+const description = document.createElement("em");
+description.textContent = "best pizza you will ever eat";
 
-    main.appendChild(name);
-    main.appendChild(description);
+menu.append(name);
+menu.append(description);
 
-    return main;
-  };
-
-  return {
-    create,
-  };
-})();
-
-export { menu };
+export default menu;

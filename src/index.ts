@@ -1,13 +1,20 @@
-import header from "./header";
+import header, { tabHome, tabMenu, tabContact } from "./header";
 import home from "./home";
-import { menu } from "./menu";
+import menu from "./menu";
+import contact from "./contact";
 
 const content = document.getElementById("content");
 
 content.appendChild(header);
-
 content.appendChild(home);
+let currentTab = home;
 
-content.appendChild(menu.create());
+tabHome.onclick = () => changeTab(home);
+tabMenu.onclick = () => changeTab(menu);
+tabContact.onclick = () => changeTab(contact);
 
-content.appendChild(menu.create());
+function changeTab(tab: HTMLElement) {
+  content.removeChild(currentTab);
+  content.appendChild(tab);
+  currentTab = tab;
+}
