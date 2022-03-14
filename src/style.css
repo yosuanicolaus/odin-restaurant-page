@@ -116,9 +116,36 @@ main {
   margin-right: 12px;
 }
 
-#f-frenchfries {background: url('./frenchfries.jpg')}
-#f-friedchicken {background: url('./friedchicken.jpg')}
-#f-burger {background: url('./burger.jpg')}
-#f-pizza {background: url('./pizza.jpg')}
-#f-eggpotato {background: url('./eggpotato.jpg')}
-#f-icecream {background: url('./icecream.jpg')}
+#f-frenchfries {
+  background: url("./frenchfries.jpg");
+}
+#f-friedchicken {
+  background: url("./friedchicken.jpg");
+}
+#f-burger {
+  background: url("./burger.jpg");
+}
+#f-pizza {
+  background: url("./pizza.jpg");
+}
+#f-eggpotato {
+  background: url("./eggpotato.jpg");
+}
+#f-icecream {
+  background: url("./icecream.jpg");
+}
+
+#contact {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  font-size: 1.3rem;
+}
+
+#contact > section {
+  background: url('./map.png');
+  background-size: 100%;
+  border: 4px solid var(--c1);
+  width: 400px;
+  height: 260px;
+}
