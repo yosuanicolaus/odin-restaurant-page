@@ -2,6 +2,7 @@ import header, { tabHome, tabMenu, tabContact } from "./header";
 import home from "./home";
 import menu from "./menu";
 import contact from "./contact";
+import "./style.css";
 
 const content = document.getElementById("content");
 
