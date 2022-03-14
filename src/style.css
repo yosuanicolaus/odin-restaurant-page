@@ -34,6 +34,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 header > button {
@@ -79,3 +81,44 @@ main {
   background: url("./restaurant.jpg");
   background-size: 100%;
 }
+
+#menu {
+  background: linear-gradient(
+    180deg,
+    rgba(234, 184, 105, 1) 0%,
+    rgba(147, 47, 41, 1) 100%
+  );
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card {
+  /* background-color: #4a7351; */
+  display: grid;
+  grid-template-columns: 200px 500px;
+  height: 100px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.food-card > div {
+  border: 2px solid var(--c1);
+  background-color: var(--c2);
+  padding: 4px;
+  box-shadow: 0 0 5px white;
+  display: grid;
+  align-items: center;
+}
+
+.food-price {
+  text-align: end;
+  margin-right: 12px;
+}
+
+#f-frenchfries {background: url('./frenchfries.jpg')}
+#f-friedchicken {background: url('./friedchicken.jpg')}
+#f-burger {background: url('./burger.jpg')}
+#f-pizza {background: url('./pizza.jpg')}
+#f-eggpotato {background: url('./eggpotato.jpg')}
+#f-icecream {background: url('./icecream.jpg')}
